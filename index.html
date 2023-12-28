@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <form id="myForm">
+            <label for="email">
+                <span>Email: </span>
+                <input type="email" id="emailInput" name="mail" minlength="5">
+                <span id="emailError" aria-live="polite"></span>
+            </label>
+
+            <label for="country">Country: </label>
+            <select id="country">
+                <option value="ch">Switzerland</option>
+                <option value="uk">United Kingdom</option>
+                <option value="de">Germany</option>
+                <option value="pl">Poland</option>
+            </select>
+
+            <label for="zipCode">ZIP: </label>
+            <input type="text" id="zipCode">
+
+            <label for="password">Password: </label>
+            <input type="text" id="password">
+
+            <label for="passwordConfirm">Confirm Password: </label>
+            <input type="text" id="passwordConfirm">
+
+            <button id="confirm">Confirm</button>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
